@@ -1,0 +1,33 @@
+h1 {
+  font-size: 12px;
+}
+
+.red {
+  background-color: red;
+}
+
+.hello {
+  text-decoration: underline;
+  text-align: center;
+  color: #ffff;
+  font-weight: 500;
+}
+
+.css {
+  font-style: italic;
+}
+
+.titletext {
+  text-align: center;
+  font-size: 25px;
+}
+
+.writer {
+  text-align: right;
+  font-size: 15px;
+}
+
+.source {
+  text-align: left;
+  font-style: italic;
+}

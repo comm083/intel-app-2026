@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스모델</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .business-card {
+        box-sizing: border-box;
+        background-color: white;
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .business-card:hover {
+        box-shadow: 5px 5px gray;
+        background-color: lightcyan;
+      }
+      .name {
+        background-color: tomato;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .job {
+        background-color: aqua;
+        color: #333;
+      }
+      .box {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="business-card">
+        <div class="box name">홍길동1</div>
+        <div class="box job">Frontend Developer</div>
+        <div class="box email">exmail@never.com</div>
+        <div class="box phone">010-1234-5678</div>
+      </div>
+      <div class="business-card">
+        <div class="box name">홍길동2</div>
+        <div class="box job">Frontend Developer</div>
+        <div class="box email">exmail@never.com</div>
+        <div class="box phone">010-1234-5678</div>
+      </div>
+      <div class="business-card">
+        <div class="box name">홍길동3</div>
+        <div class="box job">Frontend Developer</div>
+        <div class="box email">exmail@never.com</div>
+        <div class="box phone">010-1234-5678</div>
+      </div>
+      <div class="business-card">
+        <div class="box name">홍길동4</div>
+        <div class="box job">Frontend Developer</div>
+        <div class="box email">exmail@never.com</div>
+        <div class="box phone">010-1234-5678</div>
+      </div>
+      <div class="business-card">
+        <div class="box name">홍길동5</div>
+        <div class="box job">Frontend Developer</div>
+        <div class="box email">exmail@never.com</div>
+        <div class="box phone">010-1234-5678</div>
+      </div>
+    </div>
+  </body>
+</html>

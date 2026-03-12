@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-2xl font-bold p-4 bg-sky-300 w-1/4">회원가입</h1>
+    <!-- 1. 이름 `input:text`
+2. 이메일 `input:email`
+3. 생년월일 `input:date`
+4. 성별 `input:radio`
+5. 관심분야 `input:checkbox`
+6. 거주지역 `select`
+7. 가입동기 `textarea` 
+8. 초기화버튼, 가입하기버튼-->
+
+    <!-- 입력영역 -->
+    <form action="/server" method="get">
+      <div class="space-y-5 w-1/4">
+        <div class="bg-rose-300">
+          <label for="name" class="p-3 font-bold border-300">이름:</label
+          ><input
+            class="bg-gray-300"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <div class="bg-rose-300">
+          <label for="email" class="p-3 font-bold border-300">이메일:</label
+          ><input
+            class="bg-gray-300"
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="example.naver.com"
+          />
+        </div>
+        <div class="bg-rose-300">
+          <label for="pwd" class="p-3 font-bold border-300">비밀번호:</label
+          ><input class="bg-gray-300" type="password" name="pwd" id="pwd" />
+        </div>
+        <div class="bg-cyan-200">
+          <label for="birth" class="p-3 font-bold border-300">생년월일:</label
+          ><input type="date" name="birth" id="birth" />
+        </div>
+        <div class="bg-cyan-200">
+          <span class="p-3 font-bold border-300">관심분야:</span
+          ><input type="checkbox" name="interests" id="ai" value="ai" /><label
+            for="ai"
+            >AI</label
+          ><input
+            type="checkbox"
+            name="interests"
+            id="data"
+            value="data"
+          /><label for="data">DATA</label
+          ><input type="checkbox" name="interests" id="app" value="app" /><label
+            for="app"
+            >APP</label
+          >
+        </div>
+        <div class="bg-cyan-200">
+          <span class="p-3 font-bold border-300">성별:</span
+          ><input type="radio" name="gender" id="male" value="male" /><label
+            for="male"
+            >남</label
+          ><input type="radio" name="gender" id="female" value="female" /><label
+            for="female"
+            >여</label
+          >
+        </div>
+        <div class="bg-cyan-200">
+          <label for="region" class="p-3 font-bold border-300">거주지역:</label
+          ><select name="region" id="region">
+            <option value="">-선택-</option>
+            <option value="seoul">서울</option>
+            <option value="gg">경기</option>
+          </select>
+        </div>
+        <div class="bg-green-100">
+          <label for="intoduce" class="p-3 font-bold border-300"
+            >가입인사:</label
+          ><textarea name="intoduce" id="intoduce"></textarea>
+        </div>
+      </div>
+      <!-- 버튼영역 -->
+      <div class="m-4 space-x-4">
+        <button type="reset" class="bg-yellow-300">초기화</button
+        ><button type="submit" class="bg-gray-300">전송하기</button>
+      </div>
+    </form>
+  </body>
+</html>
